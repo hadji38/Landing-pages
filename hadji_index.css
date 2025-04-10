@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exclusive Offer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 250px;
+      max-width: 90%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      animation: zoomIn 1.2s ease-in-out;
+    }
+
+    .countdown {
+      font-size: 2rem;
+      margin: 20px 0;
+      color: #ffcc00;
+    }
+
+    .cta-btn {
+      background-color: #ff3c3c;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      color: white;
+      transition: background 0.3s ease;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .cta-btn:hover {
+      background-color: #e60000;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.7); opacity: 0 }
+      to { transform: scale(1); opacity: 1 }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(40px); opacity: 0 }
+      to { transform: translateY(0); opacity: 1 }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Limited Time Offer!</h1>
+    <p>Access exclusive content available only for a short time.</p>
+    <img src="https://i.imgur.com/M4b1qMF.jpg" alt="Exclusive content" />
+    
+    <div class="countdown" id="countdown">00:10</div>
+
+    <button class="cta-btn" onclick="redirect()">Continue</button>
+  </div>
+
+  <script>
+    let timeLeft = 10;
+    const countdownEl = document.getElementById("countdown");
+
+    const timer = setInterval(() => {
+      timeLeft--;
+      countdownEl.textContent = `00:${timeLeft < 10 ? '0' : ''}${timeLeft}`;
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        redirect();
+      }
+    }, 1000);
+
+    function redirect() {
+      window.location.href = "https://entertainedmagneticclients.com/ccd6dd8rs3?key=48b5447069f098716b8d010fd91faa40";
+    }
+  </script>
+</body>
+</html>
